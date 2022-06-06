@@ -1,0 +1,13 @@
+/*Mia modifica*/
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.nav-link{
+    color: rgb(106, 206, 226) !important;
+    &:hover{
+        color:rgb(30, 59, 224) !important;
+    }
+    &:active{
+        color:blue !important;
+    }
+}
+
