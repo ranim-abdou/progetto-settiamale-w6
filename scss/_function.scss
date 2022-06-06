@@ -1,12 +1,10 @@
-@import 'variables';
+
 
 @mixin light-prop {
 
     body {
         background-color: $white;
         color: $black;
-    
-        /* ------ Header / Navbar ------ */
     
         input[type=checkbox] {
             height: 0;
@@ -48,54 +46,7 @@
             transform: translateX(-100%);
         }
     
-        .bg-dark { /* header / footer background */
-            background-color: $gray-600 !important;
-        }
-        .button {
-            background: none !important;
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-        }
-        .button h6 {
-            margin-top: 8px;
-            margin-right: 10px;
-        }
-        .button, .navbar-dark .navbar-brand, #navbarCollapse ul li a {
-            color: $gray-900 !important;
-            font-size: 1em !important;
-            font-weight: 600 !important;
-            text-align: center;
-        }
-        .navbar-dark .navbar-toggler {
-            margin-bottom: 10px;
-        }
-        .navbar {
-            padding-bottom: 0;
-        }
-        .navbar-brand, .button {
-            margin-top: -15px;
-        }
-
-        #navbarCollapse hr {
-            margin-top: -1px;
-        }
         
-        /* ----------- Main ----------- */
-    
-        #first-cta {
-            background: url(../img/background-light.png);
-            padding-bottom: 50px;
-        }
-
-        .mt-5 {
-            padding-top: 75px !important;
-        }
-    
-        #services {
-            padding: 50px 0 !important;
-        }
-    
         #partnerships {
             margin-bottom: -1px;
         }
@@ -130,13 +81,5 @@
     }
 }
 
-@mixin theme-colors($light-theme: true) {
-  @if $light-theme { /* = true */
-    @include light-prop;
 
 
-  } @else { /* dark theme */
-    @include dark-prop;
-
-  }
-}
