@@ -1,4 +1,6 @@
-var checkbox = document.querySelector('input[name=theme]');
+//Prova
+
+/*var box = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
    if(this.checked) {
@@ -6,5 +8,5 @@ checkbox.addEventListener('change', function() {
    } else {
       document.documentElement.setAttribute('select-theme', 'light');
    }
-});
+});*/
 
